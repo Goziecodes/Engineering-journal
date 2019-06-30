@@ -1,0 +1,85 @@
+$basic :#ACA02E;
+$counterbasic:#1F6B04;
+
+*{
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+/* class */
+
+
+.nav-item{
+    background-color:$basic;
+    margin-right:30px;
+    border-radius: 3px 3px 3px 10px;
+    height: 50%;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0,0.7);
+    transition:all 250ms ease-in-out;
+    :last-child{
+        margin-right:0px;
+    }
+    a{
+        color:white;
+    }
+    :hover{
+        background-color:$counterbasic;
+        border-radius: 3px 3px 3px 10px;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0,0.7);
+    }
+}
+.nav-link{
+    text-transform: capitalize;
+    color:white;
+}
+/* ids */
+#navbar-brand{
+    position:absolute;
+    top:20px;
+    left:20px;
+    z-index:5;
+}
+#menu-button{
+   background-image: url("../images/Symbol\ 2\ –\ 1@2x.png");
+   position: absolute;
+   width:50px;
+   height:50px;
+   border-radius: 50%;
+   bottom:20px;
+   right:20px;
+   background-size: cover;
+   cursor: pointer;
+
+    &:hover ul{
+        clip-path: circle(250px at bottom);
+    }
+
+    li{
+        list-style: none;
+        margin-bottom:10px;
+    }
+    
+    ul{
+        position: absolute;
+        bottom:30px;
+        left:0px;
+        padding:0px;
+        clip-path: circle(0px at bottom);
+        transition: all 200ms ease-in;
+    }
+    #topic{
+        background-image: url("../images/Symbol\ 4\ –\ 1.png");
+        background-size: cover;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+    }
+    #comment{
+        left:0px;
+        background-image: url("../images/Symbol\ 3\ –\ 1.png");
+        background-size: cover;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+    }
+}

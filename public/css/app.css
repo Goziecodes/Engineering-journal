@@ -1,0 +1,97 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 0;
+}
+
+/* class */
+.nav-item {
+  background-color: #ACA02E;
+  margin-right: 30px;
+  border-radius: 3px 3px 3px 10px;
+  height: 50%;
+  -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.nav-item :last-child {
+  margin-right: 0px;
+}
+
+.nav-item a {
+  color: white;
+}
+
+.nav-item :hover {
+  background-color: #1F6B04;
+  border-radius: 3px 3px 3px 10px;
+  -webkit-box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.7);
+}
+
+.nav-link {
+  text-transform: capitalize;
+  color: white;
+}
+
+/* ids */
+#navbar-brand {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+}
+
+#menu-button {
+  background-image: url("../images/Symbol 2 – 1@2x.png");
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#menu-button:hover ul {
+  -webkit-clip-path: circle(250px at bottom);
+          clip-path: circle(250px at bottom);
+}
+
+#menu-button li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#menu-button ul {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  padding: 0px;
+  -webkit-clip-path: circle(0px at bottom);
+          clip-path: circle(0px at bottom);
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+#menu-button #topic {
+  background-image: url("../images/Symbol 4 – 1.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#menu-button #comment {
+  left: 0px;
+  background-image: url("../images/Symbol 3 – 1.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=app.css.map */
