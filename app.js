@@ -22,8 +22,10 @@ passport.deserializeUser(User.deserializeUser());
 
 
 app.get("/", function(req, res){
-    res.send("we are up");
+    res.render("index");
 });
+
+
 
 app.set("view engine", "ejs");  
 app.use(express.static(__dirname + "/public"));
